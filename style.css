@@ -33,48 +33,52 @@ h1 {
 
 }
 
-main {
-    position: sticky;
-    top: 15px;
-    z-index: 30;
-}
 
 .container-header {
     margin-right: 10px;
-    margin-left: 20%;
-    margin-top: 10px;
     display: flex;
     justify-content: space-between;
     padding-top: 5px;
     align-items: center;
-    background-color: #E6DDC4;
-    border-radius: 5px;
-    padding-bottom: 3px;
-    width: 60%;
 
 }
 
-.nav-header a {
+.nav-header button {
     color: black;
-    padding: 10px;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
     background-color: #E6DDC4;
     border-radius: 15px;
-    margin: 40px;
+    margin: 30px;
     box-shadow: 3px 3px #678983;
-    font-size: small;
+    font-size: 15px;
     font-weight: bold;
     cursor: pointer;
-    position: sticky;
-    z-index: 10;
+}
 
+.card button{
+    color: black;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #E6DDC4;
+    border-radius: 16px;
+    box-shadow: 3px 3px #678983;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
 
+.card p{
+    color: black;
 }
 
 .logo {
     color: #fef4ee;
     font-size: 30px;
     margin-left: 25px;
-    padding: 5px;
     cursor: pointer;
 
 
@@ -97,16 +101,34 @@ main {
 
 }
 
-.logo :hover {
-    transition: linear 2s;
-}
 
-.nav-header a:hover {
+.nav-header button:hover {
     color: #eeeeee;
     background-color: #181D31;
     transition: linear 1s;
 
 }
+
+.boton-card1:hover{
+    color: #eeeeee;
+    background-color: #181D31;
+    transition: linear 1s;
+}
+
+.boton-card2:hover{
+    color: #eeeeee;
+    background-color: #181D31;
+    transition: linear 1s;
+}
+
+.boton-card1{
+    margin: 7px;
+}
+
+.boton-card2{
+    margin: 20px;
+}
+
 
 .section2-cards {
     margin-top: 100px;
@@ -124,6 +146,7 @@ main {
     align-items: center;
     text-align: center;
     margin-bottom: 60px;
+    color: black;
 
 }
 
@@ -153,11 +176,6 @@ p {
     color: #181D31;
 }
 
-.card a:hover {
-    background-color: #181D31;
-    color: #eeeeee;
-    transition: linear 1s;
-}
 
 footer {
     height: 20vh;
@@ -377,3 +395,25 @@ p{
     color: #eeeeee;
     transition: linear 1s;
 }
+
+.compRacista {
+    animation: appearFromTop 1.8s ease-out forwards;
+    animation-delay: 0.5s; 
+  }
+  
+  .compNoRacista {
+    animation: appearFromTop 2.4s ease-out forwards;
+    animation-delay: 0.5s; 
+  }
+
+
+@keyframes appearFromTop {
+    from {
+      transform: translateY(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
