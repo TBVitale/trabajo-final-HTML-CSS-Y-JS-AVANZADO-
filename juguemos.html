@@ -15,13 +15,16 @@
             <a href="./index.html" class="logo">
                 <svg swidth="180" height="70">
 
-                    <rect class="compRacista" x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2"></rect>
-    
-                    <rect class="compNoRacista" x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#495579"></rect>
-    
+                    <rect class="compRacista" x="45" y="5" width="60" height="35" rx="5" id="mon1" fill="#F0E9D2">
+                    </rect>
+
+                    <rect class="compNoRacista" x="50" y="10" width="50" height="25" rx="5" id="mon2" fill="#181D31">
+                    </rect>
+
                     <polygon class="compRacista" points="55 45 ,95 45,115 62,30 62" fill="#F0E9D2" id="tec1"></polygon>
-    
-                    <polygon class="compNoRacista" points="57 48 ,92 48,104 58,43 58" fill="#495579" id="tec2"></polygon>
+
+                    <polygon class="compNoRacista" points="57 48 ,92 48,104 58,43 58" fill="#181D31" id="tec2">
+                    </polygon>
                 </svg>
             </a>
             <nav class="nav-header">
@@ -32,36 +35,40 @@
     </main>
 
     <section class="section1">
-        <h1 class="h1-hero">JUGUEMOS UN POCO </h1>
+        <h1 >JUGUEMOS UN POCO </h1>
     </section>
-    <h2 class="h2-juguemos">Armemos el rompecabezas y veamos que imagen es...</h2>
+    <h2 >Armemos el rompecabezas y veamos que imagen es...</h2>
+    <h2 > Arrastre la imagen hacia el lugar correcto </h2>
 
-    <section class="container-cajas">
-        <div class="cajas">
-            <div class="caja">
-                <p>Arrastre y suelte la imágene aquí</p>
+    <section>
+        <div id="cajas">
+            <div class="caja" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
             </div>
-            <div class="caja">
-                <p>Arrastre y suelte la imágene aquí</p>
+            <div class="caja" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                
             </div>
-            <div class="caja">
-                <p>Arrastre y suelte la imágene aquí</p>
+            <div class="caja" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
+
             </div>
         </div>
     </section>
 
 
-    <section class="container-img">
-        <div class="imagenes">
-            <img src="./imagenes/Rompe3.png" class="img2" alt="Imagen3">
-            <img src="./imagenes/rompe2.png" class="img2" alt="Imagen2">
-            <img src="./imagenes/Rompe1.png" class="img2" alt="Imagen1">
-            
-           
+    <section>
+        <div id="imagenes">
+            <img ondragstart="drag(event)" draggable="true" src="./imagenes/Rompe3.png" class="img2" alt="Imagen3"
+                id="pieza1">
+            <img ondragstart="drag(event)" draggable="true" src="./imagenes/rompe2.png" class="img2" alt="Imagen2"
+                id="pieza2">
+            <img ondragstart="drag(event)" draggable="true" src="./imagenes/Rompe1.png" class="img2" alt="Imagen1"
+                id="pieza3">
+
+
         </div>
     </section>
     <section>
-        <button class="botones-video reinicio">Reiniciar</button>
+        <button class="botones-video reinicio" onclick="buttonReload()">Reiniciar</button>
     </section>
 
     <script src="./script.js"></script>

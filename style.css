@@ -23,16 +23,13 @@ h1 {
     padding: 10px;
 }
 
-
-.h2-hero {
+h2 {
     text-align: center;
     text-shadow: 2px 2px gray;
-    font-size: 30px;
+    font-size: 45px;
     color: #678983;
     margin-top: 80px;
-
 }
-
 
 .container-header {
     margin-right: 10px;
@@ -57,7 +54,7 @@ h1 {
     cursor: pointer;
 }
 
-.card button{
+.card button {
     color: black;
     padding-left: 25px;
     padding-right: 25px;
@@ -71,7 +68,7 @@ h1 {
     cursor: pointer;
 }
 
-.card p{
+.card p {
     color: black;
 }
 
@@ -101,7 +98,6 @@ h1 {
 
 }
 
-
 .nav-header button:hover {
     color: #eeeeee;
     background-color: #181D31;
@@ -109,26 +105,25 @@ h1 {
 
 }
 
-.boton-card1:hover{
+.boton-card1:hover {
     color: #eeeeee;
     background-color: #181D31;
     transition: linear 1s;
 }
 
-.boton-card2:hover{
+.boton-card2:hover {
     color: #eeeeee;
     background-color: #181D31;
     transition: linear 1s;
 }
 
-.boton-card1{
+.boton-card1 {
     margin: 7px;
 }
 
-.boton-card2{
+.boton-card2 {
     margin: 20px;
 }
-
 
 .section2-cards {
     margin-top: 100px;
@@ -155,14 +150,11 @@ img {
     height: 224px;
 }
 
-
 p {
-
     text-align: center;
     color: #181D31;
     margin-bottom: 50px;
 }
-
 
 .boton {
     font-size: small;
@@ -236,8 +228,6 @@ footer {
     gap: 10px;
     height: 60vh;
     width: 100%;
-
-
 }
 
 .titulo-3 {
@@ -251,21 +241,11 @@ footer {
     margin-bottom: 60px;
 }
 
-
 .texto-historia {
     color: white;
     width: 45%;
     margin-bottom: 50px;
     text-align: center;
-}
-
-
-.h2-historia {
-    text-shadow: 2px 2px black;
-    font-size: 45px;
-    text-align: center;
-    color: #678983;
-    width: 45%;
 }
 
 .titulo-video {
@@ -328,21 +308,13 @@ video {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.h2-juguemos {
-    text-align: center;
-    text-shadow: 2px 2px gray;
-    font-size: 45px;
-    color: #678983;
-    margin-top: 80px;
-}
-
-
-.cajas {
+#cajas {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     z-index: 10;
+    gap: 3px;
 }
 
 .caja {
@@ -354,14 +326,14 @@ video {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 100px;
+    margin-bottom: 70px;
 }
 
 .caja:hover {
-  background-color: #1d1d1d;
+    background-color: #1d1d1d;
 }
 
-.imagenes {
+#imagenes {
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -376,44 +348,44 @@ video {
     height: 400px;
 }
 
-p{
+p {
     color: white;
 }
 
-.reinicio{
+.reinicio {
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
     margin: auto;
-    margin-bottom: 150px;
-    width: 30%;
+    margin-bottom: 130px;
+    width: 35%;
 }
 
-.botones-video:hover{
+.botones-video:hover {
     background-color: #181D31;
     color: #eeeeee;
     transition: linear 1s;
 }
 
 .compRacista {
-    animation: appearFromTop 1.8s ease-out forwards;
-    animation-delay: 0.5s; 
-  }
-  
-  .compNoRacista {
-    animation: appearFromTop 2.4s ease-out forwards;
-    animation-delay: 0.5s; 
-  }
+    animation: appearFromTop 1s ease-out forwards;
+    animation-delay: 0.2s;
+}
 
+.compNoRacista {
+    animation: appearFromTop 1s ease-out forwards;
+    animation-delay: 0.5s;
+}
 
 @keyframes appearFromTop {
     from {
-      transform: translateY(-100%);
-      opacity: 0;
+        transform: translateY(-100%);
+        opacity: 0;
     }
+
     to {
-      transform: translateY(0);
-      opacity: 1;
+        transform: translateY(0);
+        opacity: 1;
     }
-  }
+}
