@@ -31,6 +31,13 @@ h2 {
     margin-top: 80px;
 }
 
+h3{
+    text-align: center;
+    text-shadow: 2px 2px gray;
+    font-size: 45px;
+    color: #678983;
+}
+
 .container-header {
     margin-right: 10px;
     display: flex;
@@ -326,7 +333,7 @@ video {
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 }
 
 .caja:hover {
