@@ -51,9 +51,6 @@ function drop(ev) {
     checkPuzzleCompletion()
   }
 
-
-
-
   function checkPuzzleCompletion() {
     if (arreglo[0] != "" && arreglo[1] != "" && arreglo[2] != "") {
       if (arreglo[0] == "pieza3" && arreglo[1] == "pieza2" && arreglo[2] == "pieza1") {
@@ -61,8 +58,8 @@ function drop(ev) {
       } else {
         document.querySelector("h3").innerHTML = "Lo realizaste incorrectamente,intente nuevamente!!"
       }
-    } 
-}
+    }
+  }
 }
 
 function buttonReload() {
